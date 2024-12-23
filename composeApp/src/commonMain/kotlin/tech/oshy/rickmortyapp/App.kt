@@ -1,4 +1,4 @@
-package oshy.tech.rickandmorty
+package tech.oshy.rickmortyapp
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-import rickandmorty.composeapp.generated.resources.Res
-import rickandmorty.composeapp.generated.resources.compose_multiplatform
+import kmp_rickandmorty.composeapp.generated.resources.Res
+import kmp_rickandmorty.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview

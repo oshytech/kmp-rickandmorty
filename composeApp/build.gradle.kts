@@ -48,11 +48,11 @@ kotlin {
 }
 
 android {
-    namespace = "oshy.tech.rickandmorty"
+    namespace = "tech.oshy.rickmortyapp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "oshy.tech.rickandmorty"
+        applicationId = "tech.oshy.rickmortyapp"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1

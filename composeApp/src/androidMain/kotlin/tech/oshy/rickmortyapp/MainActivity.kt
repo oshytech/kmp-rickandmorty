@@ -1,4 +1,4 @@
-package oshy.tech.rickandmorty
+package tech.oshy.rickmortyapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

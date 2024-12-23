@@ -1,4 +1,4 @@
-rootProject.name = "RickAndMorty"
+rootProject.name = "kmp-rickandmorty"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

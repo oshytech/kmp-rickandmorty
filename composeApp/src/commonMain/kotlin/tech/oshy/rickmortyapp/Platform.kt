@@ -1,4 +1,4 @@
-package oshy.tech.rickandmorty
+package tech.oshy.rickmortyapp
 
 interface Platform {
     val name: String

@@ -1,4 +1,4 @@
-package oshy.tech.rickandmorty
+package tech.oshy.rickmortyapp
 
 class Greeting {
     private val platform = getPlatform()
