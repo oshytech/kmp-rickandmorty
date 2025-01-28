@@ -51,6 +51,7 @@ kotlin {
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
             implementation(libs.koin.core)
+            implementation(libs.viewmodel.compose)
 
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.negotiation)
