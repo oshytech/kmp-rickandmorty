@@ -11,6 +11,7 @@ import org.koin.core.module.dsl.factoryOf
 import org.koin.dsl.module
 import tech.oshy.rickmortyapp.data.RepositoryImpl
 import tech.oshy.rickmortyapp.data.remote.ApiService
+import tech.oshy.rickmortyapp.data.remote.paging.CharactersPagingSource
 import tech.oshy.rickmortyapp.domain.Repository
 
 val dataModule = module {
@@ -29,5 +30,6 @@ val dataModule = module {
         }
     }
     factoryOf(::ApiService)
+    factoryOf(::CharactersPagingSource)
     factory<Repository> {RepositoryImpl(get())  }
 }

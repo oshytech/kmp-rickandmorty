@@ -10,17 +10,22 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import tech.oshy.rickmortyapp.domain.GetRandomCharacter
+import tech.oshy.rickmortyapp.domain.Repository
 
-class CharactersViewModel(val getRandomCharacter: GetRandomCharacter): ViewModel() {
+class CharactersViewModel(val getRandomCharacter: GetRandomCharacter, private val repository: Repository) :
+    ViewModel() {
     private val _state = MutableStateFlow<CharactersState>(CharactersState())
-    val state:StateFlow<CharactersState> = _state
+    val state: StateFlow<CharactersState> = _state
 
     init {
         viewModelScope.launch {
-            val result = withContext(Dispatchers.IO){
+            val result = withContext(Dispatchers.IO) {
                 getRandomCharacter()
             }
             _state.update { it.copy(characterOfTheDay = result) }
         }
+    }
+    private fun getAllCharacters(){
+        _state.update { state -> state.copy(characters = repository.getAllCharacters()) }
     }
 }
